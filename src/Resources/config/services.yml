@@ -1,0 +1,17 @@
+parameters:
+    whte_rbt_foundation.subscriber.location.class: WhteRbt\FoundationBundle\EventListener\LocationSubscriber
+    whte_rbt_foundation.subscriber.route.class: WhteRbt\FoundationBundle\EventListener\RouteSubscriber
+
+services:
+    whte_rbt_foundation.subscriber.location:
+        class: '%whte_rbt_foundation.subscriber.location.class%'
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: doctrine.event_subscriber }
+    whte_rbt_foundation.subscriber.route:
+        class: '%whte_rbt_foundation.subscriber.route.class%'
+        calls:
+            - [setContainer, ['@service_container']]
+        tags:
+            - { name: doctrine.event_subscriber }

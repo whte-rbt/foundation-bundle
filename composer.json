@@ -1,0 +1,26 @@
+{
+    "name": "whte-rbt/foundation-bundle",
+    "description": "The WhteRbtFoundationBundle is just a small toolkit for Symfony projects",
+    "type": "symfony-bundle",
+    "keywords": [ "core", "foundation", "toolkit" ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Kraus",
+            "email": "mail@marcelkraus.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "WhteRbt\\FoundationBundle\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "WhteRbt\\FoundationBundle\\Tests\\": "tests" }
+    },
+    "require": {
+        "php": ">=5.4",
+        "symfony/framework-bundle": "~2.8|~3.0"
+    },
+    "suggest": {
+        "willdurand/geocoder-bundle": "The BazingaGeocoderBundle is suggested for geocoding features"
+    }
+}
