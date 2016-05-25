@@ -14,6 +14,13 @@ namespace WhteRbt\FoundationBundle\Entity;
 interface LocationAwareInterface
 {
     /**
+     * Returns locationTerm.
+     *
+     * @return string
+     */
+    public function getLocationTerm();
+
+    /**
      * Returns coordinates.
      *
      * @return array
@@ -37,13 +44,6 @@ interface LocationAwareInterface
     public function getLatitude();
 
     /**
-     * Returns longitude.
-     *
-     * @return float
-     */
-    public function getLongitude();
-
-    /**
      * Sets longitude.
      *
      * @param float $longitude
@@ -53,9 +53,9 @@ interface LocationAwareInterface
     public function setLongitude($longitude);
 
     /**
-     * Returns locationTerm.
+     * Returns longitude.
      *
-     * @return string
+     * @return float
      */
-    public function getLocationTerm();
+    public function getLongitude();
 }

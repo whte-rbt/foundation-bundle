@@ -30,6 +30,20 @@ interface RouteAwareInterface
     public function getDistance();
 
     /**
+     * Returns destinationTerm.
+     *
+     * @return string
+     */
+    public function getDestinationTerm();
+
+    /**
+     * Returns originTerm.
+     *
+     * @return string
+     */
+    public function getOriginTerm();
+
+    /**
      * Returns destinationCoordinates.
      *
      * @return array
@@ -69,13 +83,6 @@ interface RouteAwareInterface
     public function getDestinationLongitude();
 
     /**
-     * Returns destinationTerm.
-     *
-     * @return string
-     */
-    public function getDestinationTerm();
-
-    /**
      * Returns originCoordinates.
      *
      * @return array
@@ -113,11 +120,4 @@ interface RouteAwareInterface
      * @return float
      */
     public function getOriginLongitude();
-
-    /**
-     * Returns originTerm.
-     *
-     * @return string
-     */
-    public function getOriginTerm();
 }
